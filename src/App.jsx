@@ -23,13 +23,13 @@ class App extends Component {
             age: 52
             }
         ],
-        userText: 'Pozdrav svima koliko vas ima'
+        userText: 'Cheers!'
     }
 
     render(){
         return (
             <>
-                <Users users={this.state.users} />
+                <Users users={this.state.users} userText={this.state.userText}/>
             </>
         );
     }

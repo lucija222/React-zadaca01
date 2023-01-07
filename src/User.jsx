@@ -1,10 +1,10 @@
-const User = ({name, lastName, age}) => {
+const User = ({name, lastName, age, userText}) => {
     return (
-        <div>
+        <>
             <p>
-                Hey there, I'm {name} {lastName} and I'm {age} years old.
+                Hey there, I'm {name} {lastName} and I'm {age} years old. {userText}
             </p>
-        </div>
+        </>
     );
 }
 

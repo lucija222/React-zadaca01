@@ -2,16 +2,18 @@ import PropTypes from 'prop-types';
 import User from './User';
 
 
-const Users = ({ users }) => {
+const Users = (props) => {
+
+    const userText = props.userText
 
     return (
-        <div>
+        <>
             {
-                users.map((user) => {
-                    return <User name={user.name} lastName={user.lastName} age={user.age} />
+                props.users.map((user) => {
+                    return <User name={user.name} lastName={user.lastName} age={user.age} userText={userText}/>
                 })
             }
-        </div>
+        </>
     );
 }
 
